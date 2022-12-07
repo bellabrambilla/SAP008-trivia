@@ -1,0 +1,56 @@
+html, body {
+    background-color: #fb98a8;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-family: Verdana;
+  }
+  
+  /** a propriedade webkit e moz appearance nos ajuda resetando as diferenças entre os navegadores, assim, podemos retirar o estilo padrão de cada browser e adicionarmos um nosso.**/
+  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    /** determina o formato do botão radio**/
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    margin-right: 15px;
+    /** dá espaçamento entre o botão radio e a resposta**/
+  
+    position: center;
+    top: 4px;
+  }
+  
+  input:checked {
+    border: 6px solid black;
+  }
+  
+  button,
+  legend {
+    color: white;
+    background-color: black;
+  /**padding é usado para criar espaço ao redor do elemento que está dentro do botão e sua margem**/
+    padding: 5px 10px;
+    border: 0;
+    font-family: Verdana;
+    font-size: 14px;
+  }
+  /**quando passamos o mouse em cima do botão, o comando "hover" muda a sua cor**/
+  button:hover,
+  button:focus {
+    color: #999;
+  }
+  /**quando o botão está ativo, a cor do background muda com o comando "active"**/
+  button:active {
+    background-color: white;
+    color: black;
+    outline: 1px solid black;
+    
+  }
+  
+  
